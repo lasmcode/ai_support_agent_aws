@@ -1,0 +1,10 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Action": "bedrock:Retrieve",
+      "Resource": "arn:aws:bedrock:us-east-1:376582749663:knowledge-base/7OFTEF8RM8"
+    }
+  ]
+}
