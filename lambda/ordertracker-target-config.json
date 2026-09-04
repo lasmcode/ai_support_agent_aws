@@ -1,0 +1,20 @@
+{
+  "mcp": {
+    "apiGateway": {
+      "restApiId": "dj5t4oj31a",
+      "stage": "prod",
+      "apiGatewayToolConfiguration": {
+        "toolFilters": [
+          { "filterPath": "/orders/{order_id}", "methods": ["GET"] },
+          { "filterPath": "/customers/{customer_id}", "methods": ["GET"] },
+          { "filterPath": "/customers/{customer_id}/orders", "methods": ["GET"] }
+        ],
+        "toolOverrides": [
+          { "path": "/orders/{order_id}", "method": "GET", "name": "track_order", "description": "Track the shipping status of an order by order ID. Returns tracking number, carrier, and estimated delivery date." },
+          { "path": "/customers/{customer_id}", "method": "GET", "name": "get_customer", "description": "Get a customer profile, including name, loyalty tier, and loyalty points balance." },
+          { "path": "/customers/{customer_id}/orders", "method": "GET", "name": "get_customer_orders", "description": "List all orders placed by a given customer." }
+        ]
+      }
+    }
+  }
+}

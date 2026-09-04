@@ -1,0 +1,46 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets and local config
+.env
+.env.*
+!.env.example
+
+# AWS / AgentCore local deploy state (account ARNs, machine paths)
+.bedrock_agentcore.yaml
+.bedrock_agentcore/
+
+# Lambda packaging and local API ids
+*.zip
+lambda/*.zip
+lambda/api_id.txt
+lambda/api_url.txt
+
+# Local test / invoke output
+response.json
+*.log
+
+# Caches and coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~
